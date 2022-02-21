@@ -1,6 +1,6 @@
-h2. Repo to reproduce a bug in discovering tlds inside jars using liberty and eclipse
+# Repo to reproduce a bug in discovering tlds inside jars using liberty and eclipse
 
-h3. Tools versions:
+## Tools versions
 
 The features versions are:
 
@@ -18,7 +18,7 @@ And the eclipse version
 
 Version: 2021-09 (4.21.0)Build id: 20210910-1417
 
-h3. Symptomps
+## Symptomps
 
 Adding the war app to the liberty server with the option `Run applications directly from the workspace`
 enabled in the eclipse server config, generates this xml in `X:\path\to\liberty\servers\defaultServer\apps\test-tld-0.0.1-SNAPSHOT.war.xml:
@@ -94,6 +94,6 @@ However if i change the xml loose application xml config to:
 
 the error is gone
 
-h3. Diagnostic
+## Diagnostic
 
 It seems the first loose application configuration makes the server ignore the tld definitions present in the jar
