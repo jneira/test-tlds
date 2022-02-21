@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+	<description>Test taglib</description>
+	<display-name>Test taglib</display-name>
+	<tlib-version>1.0</tlib-version>
+	<short-name>testUtil</short-name>
+	<uri>http://test-tlds.org/util</uri>
+	<function>
+		<description>Connverts an array to List</description>
+		<name>asList</name>
+		<function-class>java.util.Arrays</function-class>
+		<function-signature>java.util.List asList(java.lang.Object[])</function-signature>
+		<example>${testUtil:asList(array)}</example>
+	</function>
+</taglib>
